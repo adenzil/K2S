@@ -7,10 +7,10 @@ echo "\nWelcome, To fech your profile details from K2S please enter your email i
 $handle = fopen ("php://stdin","r");
 
 // Validate email
-// do {
+do {
 	echo "Please enter a valid email id : ";
 	$email = trim(fgets($handle));
-// } while (preg_match("/^[a-zA-Z-' ]*$/",$email));
+} while (preg_match("/^[a-zA-Z-' ]*$/",$email));
 
 echo "\nYour password : ";
 $password = trim(fgets($handle));
